@@ -4,7 +4,7 @@ const songList = document.getElementById("songList");
 function loadSongs(){
     const q = document.getElementById("search").value;
 
-     fetch(`https://api.jamendo.com/v3.0/tracks/?client_id=d111cfa7&search=${q}&limit=5&format=json`)//q song name fetched
+     fetch(`http://localhost:3000/songs?search=${q}`)//q song name fetched
      .then(res => res.json())
     .then(data => {
       songList.innerHTML=""; //clear previous songs

@@ -1,0 +1,12 @@
+# Backend secrets & dependencies
+backend/.env
+backend/node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
